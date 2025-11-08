@@ -153,7 +153,7 @@ const containerStyles = {
   },
 };
 
-const insertionSortOperation: React.FC = () => {
+const InsertionSortOperation: React.FC = () => {
   const [bars, setBars] = useState<Bar[]>([]);
   const [isSorting, setIsSorting] = useState<boolean>(false);
   const [activeAlgorithm, setActiveAlgorithm] = useState<string | null>(null);
@@ -247,4 +247,4 @@ const insertionSortOperation: React.FC = () => {
   );
 };
 
-export default insertionSortOperation;
+export default InsertionSortOperation;

@@ -153,7 +153,7 @@ const containerStyles = {
   },
 };
 
-const mergeSortOperation: React.FC = () => {
+const MergeSortOperation: React.FC = () => {
   const [bars, setBars] = useState<Bar[]>([]);
   const [isSorting, setIsSorting] = useState<boolean>(false);
   const [activeAlgorithm, setActiveAlgorithm] = useState<string | null>(null);
@@ -247,4 +247,4 @@ const mergeSortOperation: React.FC = () => {
   );
 };
 
-export default mergeSortOperation;
+export default MergeSortOperation;

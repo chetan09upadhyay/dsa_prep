@@ -151,7 +151,7 @@ const containerStyles = {
   },
 };
 
-const selectionSortOperation: React.FC = () => {
+const SelectionSortOperation: React.FC = () => {
   const [bars, setBars] = useState<Bar[]>([]);
   const [isSorting, setIsSorting] = useState<boolean>(false);
   const [activeAlgorithm, setActiveAlgorithm] = useState<string | null>(null);
@@ -245,4 +245,4 @@ const selectionSortOperation: React.FC = () => {
   );
 };
 
-export default selectionSortOperation;
+export default SelectionSortOperation;

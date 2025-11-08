@@ -148,7 +148,13 @@ const containerStyles = {
   },
 };
 
-const bubbleSortOperation: React.FC = () => {
+// const bubbleSortOperation: React.FC = () => {
+//   const [bars, setBars] = useState<Bar[]>([]);
+//   const [isSorting, setIsSorting] = useState<boolean>(false);
+//   const [activeAlgorithm, setActiveAlgorithm] = useState<string | null>(null);
+//   const { theme, resolvedTheme } = useTheme();
+
+  const BubbleSortOperation: React.FC = () => {
   const [bars, setBars] = useState<Bar[]>([]);
   const [isSorting, setIsSorting] = useState<boolean>(false);
   const [activeAlgorithm, setActiveAlgorithm] = useState<string | null>(null);
@@ -240,4 +246,4 @@ const bubbleSortOperation: React.FC = () => {
   );
 };
 
-export default bubbleSortOperation;
+export default BubbleSortOperation;
