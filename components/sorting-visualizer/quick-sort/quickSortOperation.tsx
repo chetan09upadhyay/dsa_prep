@@ -157,7 +157,7 @@ const containerStyles = {
   },
 };
 
-const quickSortOperation: React.FC = () => {
+const QuickSortOperation: React.FC = () => {
   const [bars, setBars] = useState<Bar[]>([]);
   const [isSorting, setIsSorting] = useState<boolean>(false);
   const [activeAlgorithm, setActiveAlgorithm] = useState<string | null>(null);
@@ -251,4 +251,4 @@ const quickSortOperation: React.FC = () => {
   );
 };
 
-export default quickSortOperation;
+export default QuickSortOperation;
