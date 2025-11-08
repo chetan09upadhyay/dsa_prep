@@ -1,0 +1,251 @@
+/* components/sorting-visualizer/styles/SortingVisualizer.module.css
+.container {
+  padding: 20px;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #f0f0f0;
+  color: #333333;
+}
+
+.themeToggle {
+  margin: 10px 0;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.themeToggle:hover {
+  background-color: #0056b3;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls input {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: inherit;
+  color: inherit;
+}
+
+.controls button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.controls button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.controls button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.sortingButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.active {
+  background-color: #28a745 !important;
+}
+
+.arrayContainer {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.bar {
+  width: 20px;
+  border-radius: 3px;
+  transition: height 0.3s ease, background 0.3s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+}
+
+.dark .bar {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}
+
+.light .bar {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+} */
+
+
+
+ /* components/sorting-visualizer/styles/SortingVisualizer.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+.arrayContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.bar {
+  width: 20px;
+  margin: 0 2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  transition: height 0.3s ease-in-out;
+}
+
+.barValue {
+  color: #ffffff;
+  font-size: 12px;
+  position: absolute;
+  bottom: -20px;
+}
+
+.controls {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  border:none;
+  border-radius: 4px;
+  background: #1e90ff;
+  color: white;
+  cursor: pointer;
+}
+.controls button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.controls input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.sortingButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.active {
+  background-color: #ff4d4d !important;
+}
+
+.themeToggle {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+
+.arrayContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 5px;
+  padding: 20px;
+}
+
+.barWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.bar {
+  width: 30px;
+  margin: 0 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.barValueInside {
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 5px; /* Adjust to position inside the bar */
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Optional for readability */
+}
+
+.barValueOutside {
+  color: black; /* Adjust based on theme */
+  font-size: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: -20px; /* Position above the bar */
+  text-align: center;
+  width: 100%;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Optional for readability */
+}
+
+/* Adjust for light theme if needed */
+.light .barValueOutside {
+  color: black;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.dark .barValueOutside {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
